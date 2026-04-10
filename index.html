@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Tracking System</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f4f7fb; color: #333; }
+    .navbar {
+      background: #1e3a8a;
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container { width: 90%; max-width: 1100px; margin: 30px auto; }
+    .hero {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .hero h1 { color: #1e3a8a; margin-bottom: 10px; }
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .search-box input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .search-box button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+    .card h3 { color: #1e40af; margin-bottom: 10px; }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h2>Alumni Tracking System</h2>
+    <p>College Project</p>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Track Alumni Details</h1>
+      <p>Maintain alumni name, batch, company, and contact information in a simple dashboard.</p>
+      <div class="search-box">
+        <input type="text" placeholder="Search alumni by name or batch" />
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Alumni</h3>
+        <p>1,250 Registered Members</p>
+      </div>
+      <div class="card">
+        <h3>Placed Alumni</h3>
+        <p>870 Working Professionals</p>
+      </div>
+      <div class="card">
+        <h3>Top Companies</h3>
+        <p>TCS, Infosys, Wipro, Zoho</p>
+      </div>
+      <div class="card">
+        <h3>Events Conducted</h3>
+        <p>15 Alumni Meetups</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Designed using HTML & CSS | Ready in 10 Minutes</p>
+  </div>
+</body>
+</html>
